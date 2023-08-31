@@ -1,0 +1,17 @@
+body {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#unitTable {
+    font-size: 1em;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    background-color: lightgray;
+}
