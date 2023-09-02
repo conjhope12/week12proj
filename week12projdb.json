@@ -1,10 +1,9 @@
 {
   "lightWeight": [
     {
-      "unitName": "Arnold",
-      "specificLift": "Lat Pulldown",
-      "id": "1"
+      "unitName": "Donkey Kong",
+      "specificLift": "Bicep Curl",
+      "id": 1
     }
-    
   ]
 }

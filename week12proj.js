@@ -7,8 +7,8 @@ $.get(URL_ENDPOINT).then(data => {
         $(`
         <tr>
           <td>${unit.id}</td>
-          <td>${unit.newUnitName}</td>
-          <td>${unit.newLift}</td>
+          <td>${unit.unitName}</td>
+          <td>${unit.specificLift}</td>
           <td>
             <button class="btn btn-outline-danger" onclick="deleteUser(${unit.id})">X</button>
           </td>
@@ -18,15 +18,14 @@ $.get(URL_ENDPOINT).then(data => {
     })
   })
 
-  // $(document).ready(function() {
-    $('#submitButton').click(function () {
+    $('#submitButton').on('click',function () {
   
       $.post(URL_ENDPOINT, {
         unitName: $('#newUnitName').val(),
         specificLift: $('#newLift').val(),
       })
     })
-  // })
+  
   function deleteUser (id) {
 
     $.ajax(`${URL_ENDPOINT}/${id}`, {
@@ -45,4 +44,8 @@ $.get(URL_ENDPOINT).then(data => {
     })
   }
   
-  $('#submitUpdateButton').click(updateUser)
+  $('#submitUpdateButton').on('click',updateUser)
+
+  for (let i = "a"; i !== "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"; i += "a") {
+    console.log(i)
+  }
